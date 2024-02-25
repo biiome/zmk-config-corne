@@ -9,6 +9,22 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        DesktopLeft: DesktopLeft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp LCTRL &kp LEFT_ARROW>;
+            label = "DESKTOPLEFT";
+        };
+
+        DesktopRight: DesktopRight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp LCTRL &kp RIGHT_ARROW>;
+            label = "DESKTOPRIGHT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
