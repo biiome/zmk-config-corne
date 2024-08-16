@@ -45,19 +45,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        Ctrl-C {
-            bindings = <&kp LC(C)>;
-            key-positions = <16 15 14>;
-        };
-
-        Ctrl-l {
-            bindings = <&kp LC(LA(L))>;
-            key-positions = <19 20 21>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
