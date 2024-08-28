@@ -58,18 +58,18 @@
             label = "CLEAR_TERMINAL";
         };
 
-        Clear_Terminal: Clear_Terminal {
+        clear: clear {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RIGHT_CONTROL &kp LEFT_ALT>,
+                <&kp LCTRL &kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp L>,
                 <&macro_release>,
-                <&kp LEFT_CONTROL &kp LEFT_ALT>;
+                <&kp LCTRL &kp LEFT_ALT>;
 
-            label = "CLEAR_TERMINAL";
+            label = "CLEAR";
         };
     };
 
