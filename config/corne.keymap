@@ -43,9 +43,49 @@
 
             label = "DESKTOPRIGHT";
         };
+
+        Ctrl_C: Clear_Terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_CONTROL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "CLEAR_TERMINAL";
+        };
+
+        Clear_Terminal: Clear_Terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_CONTROL &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT>;
+
+            label = "CLEAR_TERMINAL";
+        };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Ctrl-C {
+            bindings = <&Ctrl_C>;
+            key-positions = <14 15 16>;
+        };
+
+        Clear_Terminal {
+            bindings = <&Clear_Terminal>;
+            key-positions = <19 20 21>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
