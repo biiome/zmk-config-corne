@@ -85,6 +85,11 @@
             bindings = <&clear>;
             key-positions = <19 20 21>;
         };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
