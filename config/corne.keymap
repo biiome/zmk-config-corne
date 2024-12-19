@@ -73,24 +73,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        Ctrl-C {
-            bindings = <&Ctrl_C>;
-            key-positions = <14 15 16>;
-        };
-
-        Clear_Terminal {
-            bindings = <&clear>;
-            key-positions = <19 20 21>;
-        };
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
