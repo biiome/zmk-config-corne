@@ -76,19 +76,14 @@
     combos {
         compatible = "zmk,combos";
 
-        Escape {
+        combo_escape {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
 
-        Ctrl-C {
+        combo_ctrl-c {
             bindings = <&kp LC(C)>;
             key-positions = <14 15 16>;
-        };
-
-        Ctrl-Alt-l {
-            bindings = <&kp LA(LC(L))>;
-            key-positions = <19 20 21>;
         };
     };
 
